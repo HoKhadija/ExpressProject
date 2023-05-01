@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+    /* NavBar */
+header {
+    background-color: #1a1818; 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+
+}
+nav ul{
+    font-size: 18px;
+    list-style: none;
+    margin-right: 150px;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffeeee;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #eee;
+}
+
+    /* homePage */
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: antiquewhite;
+    position: relative;
+    padding: 2rem 150px;
+}
+
+.image img{
+    border-radius: 12px;
+}
+.home::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.title{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: start;
+    z-index: 1;
+    padding: 2rem;
+}
+
+
+button{
+    padding: 0.5rem;
+    background-color: rgb(22, 54, 83);
+    border-radius: 12px;
+    width: 9rem;
+    color: #ffeeee;
+    font-size: 16px;
+}
+
+body{
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+    /* contactUs */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 150px;
+}
+
+.contact_sec h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact_sec p{
+    text-align: center;
+    font-size: 18px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+input{
+    padding: 0.3rem;
+    width: 1200px;
+}
+
+#submit{
+    border-radius: 14px;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    background-color: rgb(22, 54, 83);
+    color: #f0e8e8;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#submit:hover{
+    font-size: 18px;
+}
+
+textarea{
+    height: 7rem;
+    width: 1200px;
+}
+
+    /* ourServices */
+.service_info h1{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.serv_List{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 1rem;
+    margin: 40px 150px;
+}
+
+.Service{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #ffeeee;
+}
+.Service h3{
+    text-align: center;
+}
